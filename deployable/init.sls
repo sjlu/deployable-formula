@@ -19,7 +19,7 @@ deployable-repos:
 
 deployable-config:
   file.serialize:
-    - name: /home/{{ salt['pillar.get']('deployable:user', 'root') }}/deployable/config.json
+    - name: /home/{{ salt['pillar.get']('deployable:user', 'root') }}/deployable/config/config.json
     - dataset_pillar: deployable:config
     - user: {{ salt['pillar.get']('deployable:user', 'root') }}
     - group: {{ salt['pillar.get']('deployable:user', 'root') }}
